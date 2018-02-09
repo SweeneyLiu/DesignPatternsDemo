@@ -1,4 +1,4 @@
-package com.lsw.demo.abstractfactory;
+package com.lsw.demo.factory.abstractfactory;
 
 /**
  * Created by liushuwei on 2018/2/9.

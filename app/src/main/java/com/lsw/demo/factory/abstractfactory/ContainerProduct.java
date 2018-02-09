@@ -1,6 +1,4 @@
-package com.lsw.demo.abstractfactory;
-
-import android.util.Log;
+package com.lsw.demo.factory.abstractfactory;
 
 /**
  * Created by liushuwei on 2018/2/9.

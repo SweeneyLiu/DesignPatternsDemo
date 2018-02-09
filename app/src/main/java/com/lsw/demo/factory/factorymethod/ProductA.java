@@ -1,4 +1,4 @@
-package com.lsw.demo.factorymethod;
+package com.lsw.demo.factory.factorymethod;
 
 import android.util.Log;
 

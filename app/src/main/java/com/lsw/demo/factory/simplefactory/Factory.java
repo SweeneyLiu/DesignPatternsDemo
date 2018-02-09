@@ -1,4 +1,4 @@
-package com.lsw.demo.factory;
+package com.lsw.demo.factory.simplefactory;
 
 /**
  * Created by liushuwei on 2018/2/9.

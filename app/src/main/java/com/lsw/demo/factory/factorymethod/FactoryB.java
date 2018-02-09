@@ -1,4 +1,4 @@
-package com.lsw.demo.factorymethod;
+package com.lsw.demo.factory.factorymethod;
 
 /**
  * Created by liushuwei on 2018/2/9.

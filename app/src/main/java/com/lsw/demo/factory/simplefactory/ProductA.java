@@ -1,4 +1,4 @@
-package com.lsw.demo.factory;
+package com.lsw.demo.factory.simplefactory;
 
 import android.util.Log;
 
@@ -6,9 +6,9 @@ import android.util.Log;
  * Created by liushuwei on 2018/2/9.
  */
 
-public class ProductB extends Product {
+public class ProductA extends Product {
 
-    private static final String TAG = "ProductB";
+    private static final String TAG = "ProductA";
     
     @Override
     public void Show() {
