@@ -1,4 +1,4 @@
-package com.lsw.demo;
+package com.lsw.demo.singleinstance;
 
 /**
  * Created by liushuwei on 2017/6/15.
