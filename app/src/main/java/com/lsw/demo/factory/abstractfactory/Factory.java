@@ -5,6 +5,6 @@ package com.lsw.demo.factory.abstractfactory;
  */
 
 public abstract class Factory {
-    public abstract AbstractProduct manufactureContainer();
-    public abstract AbstractProduct manufactureMould();
+    public abstract TextEditor createTextEditor();
+    public abstract ImageEditor createImageEditor();
 }

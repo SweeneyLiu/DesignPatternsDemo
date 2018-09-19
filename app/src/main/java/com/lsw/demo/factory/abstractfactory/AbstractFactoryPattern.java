@@ -9,17 +9,14 @@ public class AbstractFactoryPattern {
     private static final String TAG = "AbstractFactoryPattern";
     
     public static void productObject(){
-        FactoryA mFactoryA = new FactoryA();
-        FactoryB mFactoryB = new FactoryB();
-        //A厂当地客户需要容器产品A
-        mFactoryA.manufactureContainer().show();
-        //A厂当地客户需要模具产品A
-        mFactoryA.manufactureMould().show();
+        Factory factory = new MacFactory();
+        TextEditor textEditor = factory.createTextEditor();
+        textEditor.edit();
+        textEditor.save();
 
-        //B厂当地客户需要容器产品B
-        mFactoryB.manufactureContainer().show();
-        //B厂当地客户需要模具产品B
-        mFactoryB.manufactureMould().show();
+        ImageEditor imageEditor = factory.createImageEditor();
+        imageEditor.edit();
+        imageEditor.save();
     }
 
 }
