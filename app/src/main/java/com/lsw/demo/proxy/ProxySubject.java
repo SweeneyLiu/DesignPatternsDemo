@@ -4,7 +4,7 @@ package com.lsw.demo.proxy;
  * Created by liushuwei on 2018/2/9.
  */
 
-public class Proxy implements Subject {
+public class ProxySubject implements Subject {
     @Override
     public void buyMac() {
         //引用并创建真实对象实例，即”我“

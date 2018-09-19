@@ -7,7 +7,7 @@ package com.lsw.demo.proxy;
 public class ProxyPattern {
 
     public static void getProxy(){
-        Subject proxy = new Proxy();
+        Subject proxy = new ProxySubject();
         proxy.buyMac();
     }
 }
