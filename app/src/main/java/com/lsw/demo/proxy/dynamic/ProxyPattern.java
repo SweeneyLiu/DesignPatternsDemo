@@ -9,7 +9,7 @@ import java.lang.reflect.Proxy;
 public class ProxyPattern {
 
     public static void getProxy(){
-        Subject subject = (RealSubject) Proxy.newProxyInstance(RealSubject.class.getClassLoader(),RealSubject.class.getInterfaces(),new ProxySubject(new RealSubject()));
+        Subject subject = (Subject) Proxy.newProxyInstance(RealSubject.class.getClassLoader(),RealSubject.class.getInterfaces(),new ProxySubject(new RealSubject()));
         subject.buyMac();
     }
 }
