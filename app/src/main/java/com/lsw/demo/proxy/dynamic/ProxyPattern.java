@@ -1,5 +1,6 @@
 package com.lsw.demo.proxy.dynamic;
 
+import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 /**
@@ -9,7 +10,18 @@ import java.lang.reflect.Proxy;
 public class ProxyPattern {
 
     public static void getProxy(){
-        Subject subject = (Subject) Proxy.newProxyInstance(RealSubject.class.getClassLoader(),RealSubject.class.getInterfaces(),new ProxySubject(new RealSubject()));
+
+        RealSubject realSubject = new RealSubject();
+
+        //获取被代理类的ClassLoader
+        ClassLoader classLoader = realSubject.getClass().getClassLoader();
+        //构造一个动态代理
+        InvocationHandler dynamicProxy = new DynamicProxy(realSubject);
+
+        Class[] classes = realSubject.getClass().getInterfaces();
+//        Class[] classes = new Class[]{RealSubject.class};
+
+        Subject subject = (Subject) Proxy.newProxyInstance(classLoader,classes,dynamicProxy);
         subject.buyMac();
     }
 }

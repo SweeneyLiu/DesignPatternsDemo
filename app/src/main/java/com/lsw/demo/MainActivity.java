@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.lsw.demo.proxy.dynamic.ProxyPattern;
-import com.lsw.demo.proxy.dynamic.ProxySubject;
 
 public class MainActivity extends AppCompatActivity {
 
